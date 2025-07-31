@@ -1,14 +1,40 @@
 <%- include ('partials/header.ejs'); %>
 
-    <body>
+<body>
+    <div class="sakai-layout">
         <%- include ('partials/navbar.ejs'); %>
-        <br><br><br>
-        <%- include ('partials/carousel.ejs'); %>
-
-     
-
-
-
-    <br><br><br><br><br><br><br><br>
-    </body>
+        
+        <div class="sakai-main">
+            <div class="sakai-topbar">
+                <div class="sakai-breadcrumb">
+                    <i class="bi bi-house-door"></i> Início
+                </div>
+                <div>
+                    <span class="text-muted">Bem-vindo ao sistema de informações sobre queimadas</span>
+                </div>
+            </div>
+            
+            <div class="sakai-content">
+                <div class="sakai-card">
+                    <div class="sakai-card-header">
+                        <h2><i class="bi bi-fire"></i> Informações sobre Queimadas</h2>
+                    </div>
+                    <div class="sakai-card-body">
+                        <%- include ('partials/carousel.ejs'); %>
+                    </div>
+                </div>
+                
+                <div class="sakai-card">
+                    <div class="sakai-card-header">
+                        <h3><i class="bi bi-info-circle"></i> Sobre o Projeto</h3>
+                    </div>
+                    <div class="sakai-card-body">
+                        <p class="p">Este é um projeto informativo sobre queimadas e secas, desenvolvido para conscientizar sobre os riscos e formas de prevenção destes fenômenos naturais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <%- include ('partials/footer.ejs'); %>
+</body>

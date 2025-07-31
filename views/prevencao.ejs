@@ -1,17 +1,40 @@
 <%- include ('partials/header.ejs'); %>
 
-    <body>
+<body>
+    <div class="sakai-layout">
         <%- include ('partials/navbar.ejs'); %>
-        <br>
-       
-        <%- include ('partials/card_prevencao.ejs'); %>
-
-       
-     
-
-
-        <%- include ('partials/comentario.ejs'); %>
-
+        
+        <div class="sakai-main">
+            <div class="sakai-topbar">
+                <div class="sakai-breadcrumb">
+                    <i class="bi bi-shield-check"></i> Como Prevenir
+                </div>
+                <div>
+                    <span class="text-muted">Dicas e orientações para prevenção</span>
+                </div>
+            </div>
+            
+            <div class="sakai-content">
+                <div class="sakai-card">
+                    <div class="sakai-card-header">
+                        <h2><i class="bi bi-shield-check"></i> Como Prevenir</h2>
+                    </div>
+                    <div class="sakai-card-body">
+                        <%- include ('partials/card_prevencao.ejs'); %>
+                    </div>
+                </div>
+                
+                <div class="sakai-card">
+                    <div class="sakai-card-header">
+                        <h3><i class="bi bi-chat-dots"></i> Comentários</h3>
+                    </div>
+                    <div class="sakai-card-body">
+                        <%- include ('partials/comentario.ejs'); %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
-    </body>
     <%- include ('partials/footer.ejs'); %>
+</body>

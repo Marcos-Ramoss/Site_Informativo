@@ -1,28 +1,55 @@
 
 <%- include ('partials/header.ejs'); %>
 
-    <body>
+<body>
+    <div class="sakai-layout">
         <%- include ('partials/navbar.ejs'); %>
-        <br><br><br>
-      
-        <ul class="list-group container col-6 ">
-           
-            <li class="list-group-item border border-dark bg-dark text-Light">Componentes</li>
-            <li class="list-group-item border border-dark">Marcos Oliveira Ferreira</li>
-            <li class="list-group-item border border-dark">Mikael Ximenes de Souza</li>
-            <li class="list-group-item border border-dark">Lídia dos Santos Silva</li>
-            <li class="list-group-item border border-dark">Fábio de Souza Costa</li>
-          </ul>
         
-
-
-     
-
-
-
-    <br><br><br><br><br><br><br><br>
-    </body>
+        <div class="sakai-main">
+            <div class="sakai-topbar">
+                <div class="sakai-breadcrumb">
+                    <i class="bi bi-people"></i> Quem Somos
+                </div>
+                <div>
+                    <span class="text-muted">Conheça nossa equipe</span>
+                </div>
+            </div>
+            
+            <div class="sakai-content">
+                <div class="sakai-card">
+                    <div class="sakai-card-header">
+                        <h2><i class="bi bi-people"></i> Nossa Equipe</h2>
+                    </div>
+                    <div class="sakai-card-body">
+                        <div class="row">
+                            <div class="col-md-8 mx-auto">
+                                <div class="list-group">
+                                    <div class="list-group-item sakai-card-header text-white">
+                                        <h5 class="mb-0"><i class="bi bi-person-badge"></i> Componentes</h5>
+                                    </div>
+                                    <div class="list-group-item border-0 bg-light">
+                                        <i class="bi bi-person-circle text-primary"></i> Marcos Oliveira Ferreira
+                                    </div>
+                                    <div class="list-group-item border-0 bg-light">
+                                        <i class="bi bi-person-circle text-primary"></i> Mikael Ximenes de Souza
+                                    </div>
+                                    <div class="list-group-item border-0 bg-light">
+                                        <i class="bi bi-person-circle text-primary"></i> Lídia dos Santos Silva
+                                    </div>
+                                    <div class="list-group-item border-0 bg-light">
+                                        <i class="bi bi-person-circle text-primary"></i> Fábio de Souza Costa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <%- include ('partials/footer.ejs'); %>
+</body>
 
 
 
