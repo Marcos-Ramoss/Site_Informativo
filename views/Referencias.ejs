@@ -1,16 +1,31 @@
 <%- include ('partials/header.ejs'); %>
 
-    <body>
+<body>
+    <div class="sakai-layout">
         <%- include ('partials/navbar.ejs'); %>
-        <br><br><br>
         
-        <%- include ('partials/referencias.ejs'); %>
-
-
-     
-
-
-
-    <br><br><br><br><br><br><br><br>
-    </body>
+        <div class="sakai-main">
+            <div class="sakai-topbar">
+                <div class="sakai-breadcrumb">
+                    <i class="bi bi-book"></i> Referências
+                </div>
+                <div>
+                    <span class="text-muted">Fontes e bibliografia do projeto</span>
+                </div>
+            </div>
+            
+            <div class="sakai-content">
+                <div class="sakai-card">
+                    <div class="sakai-card-header">
+                        <h2><i class="bi bi-book"></i> Referências</h2>
+                    </div>
+                    <div class="sakai-card-body">
+                        <%- include ('partials/referencias.ejs'); %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <%- include ('partials/footer.ejs'); %>
+</body>

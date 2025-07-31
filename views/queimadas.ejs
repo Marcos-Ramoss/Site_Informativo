@@ -1,14 +1,40 @@
 <%- include ('partials/header.ejs'); %>
 
-
 <body>
-<%- include ('partials/navbar.ejs'); %>
-<br>
-<%- include ('partials/cards-queimadas.ejs'); %>
-
-
-
-<%- include ('partials/comentario.ejs'); %>
-
+    <div class="sakai-layout">
+        <%- include ('partials/navbar.ejs'); %>
+        
+        <div class="sakai-main">
+            <div class="sakai-topbar">
+                <div class="sakai-breadcrumb">
+                    <i class="bi bi-fire"></i> Queimadas
+                </div>
+                <div>
+                    <span class="text-muted">Informações sobre queimadas e seus efeitos</span>
+                </div>
+            </div>
+            
+            <div class="sakai-content">
+                <div class="sakai-card">
+                    <div class="sakai-card-header">
+                        <h2><i class="bi bi-fire"></i> Queimadas</h2>
+                    </div>
+                    <div class="sakai-card-body">
+                        <%- include ('partials/cards-queimadas.ejs'); %>
+                    </div>
+                </div>
+                
+                <div class="sakai-card">
+                    <div class="sakai-card-header">
+                        <h3><i class="bi bi-chat-dots"></i> Comentários</h3>
+                    </div>
+                    <div class="sakai-card-body">
+                        <%- include ('partials/comentario.ejs'); %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <%- include ('partials/footer.ejs'); %>
 </body>
-<%- include ('partials/footer.ejs'); %>
